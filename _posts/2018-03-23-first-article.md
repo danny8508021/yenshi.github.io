@@ -72,3 +72,7 @@ bundle exec jekyll serve --watch --livereload --incremental
             margin-top: 12px;
             margin-bottom: 20px;
             width: 80%;">
+跟據[官網][官網]的文件，如果要對 Theme 做修改，只要在 my\_blog 資料夾中建立相同路徑的檔案就可以覆蓋掉 default 的參數，`_layouts`資料夾定義了頁面的排列，`_sass`則是定義了頁面的樣貌，在 Jekyll 裡面可以使用 SCSS 語法來撰寫 CSS，參考這篇[文章][文章]可以對 SCSS 有初步的了解，這樣一來就可以對自己的 Blog 進行任意的調整了！
+
+[官網]: https://jekyllrb.com/docs/themes/
+[文章]: http://eddychang.me/blog/others/91-scss-15-mins.html
