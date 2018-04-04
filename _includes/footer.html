@@ -4,26 +4,31 @@
   <div class="wrapper">
 
     <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list"> <li class="p-name">
-            {%- if site.author -%}
-              {{ site.author | escape }}
-            {%- else -%}
-              {{ site.title | escape }}
-            {%- endif -%}
-            </li>
-            {%- if site.email -%}
-            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {%- endif -%}
-        </ul>
+      <div class="footer-col">
+        {%- if site.github_username -%}
+          <a class="footer-icon" href="https://github.com/{{ site.github_username | cgi_escape | escape }}">
+            <img src="/assets/github-icon.png"/>
+          </a>
+        {%- endif -%}
+        {%- if site.linkedin_username -%}
+          <a class="footer-icon" href="https://www.linkedin.com/in/{{ site.linkedin_username| cgi_escape | escape }}">
+            <img src="/assets/linkedin-icon.png"/>
+          </a>
+        {%- endif -%}
       </div>
-
-      <div class="footer-col footer-col-2">
-        {%- include social.html -%}
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{- site.description | escape -}}</p>
+      <div class="footer-col">
+        <div>
+          {%- if site.author -%}
+            {{ site.author | escape }}
+          {%- else -%}
+            {{ site.title | escape }}
+          {%- endif -%}
+        </div>
+        <div>
+          {%- if site.email -%}
+          <a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a>
+          {%- endif -%}
+        </div>
       </div>
     </div>
 
