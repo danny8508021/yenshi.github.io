@@ -56,22 +56,10 @@ bundle exec jekyll serve --watch --livereload --incremental
 `--livereload` 使我們瀏覽的時候不需要重整頁面。  
 `--incremental` 讓每次 build 的時候只會針對修改部分。  
 - Jekyll 所做的事情是將檔案根據當前目錄的配置進行處理後將結果存放在 `_site` 目錄底下
-<img src="/images/jekyll-files.png" alt="Jekyll original files"
-     style="display: block;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 12px;
-            margin-bottom: 20px;
-            width: 80%;">
+<img src="/images/jekyll-files.png" alt="Jekyll original files">
 - 可以預覽網站後第一件事情是發現排版不是很好看...  
 在 Jekyll 裡面，我們可以使用不同的 Theme 來做版面的配置，預設的 Theme 是 `minima`，它的版面配置檔案路徑可以使用 `bundle show minima` 來檢視，
-<img src="/images/theme-minima.png" alt="Tree of minima"
-     style="display: block;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 12px;
-            margin-bottom: 20px;
-            width: 80%;">
+<img src="/images/theme-minima.png" alt="Tree of minima">
 跟據[官網][官網]的文件，如果要對 Theme 做修改，只要在 my\_blog 資料夾中建立相同路徑的檔案就可以覆蓋掉 default 的參數，`_layouts`資料夾定義了頁面的排列，`_sass`則是定義了頁面的樣貌，在 Jekyll 裡面可以使用 SCSS 語法來撰寫 CSS，參考這篇[文章][文章]可以對 SCSS 有初步的了解，這樣一來就可以對自己的 Blog 進行任意的調整了！
 
 [官網]: https://jekyllrb.com/docs/themes/

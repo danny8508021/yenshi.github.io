@@ -1,0 +1,29 @@
+.about-content {
+    .title {
+        height: 250px;
+        %pane {
+            float: left;
+            height: 250px;
+            text-align: center;
+        }
+        $photo-pane-size: 250px !default;
+        .photo-pane {
+            @extend %pane;
+            width: $photo-pane-size;
+            background-color:#c5e290;
+        }
+        .intro-pane {
+            @extend %pane;
+            width: $content-width - $photo-pane-size - 2 * $spacing-unit; 
+            background-color:#ffe2adbd;
+        }
+    }
+    .project-list {
+        $project-size: 400px !default;
+        .project {
+            height: $project-size;
+            width: $content-width - 2 * $spacing-unit;
+            background-color:#91ffdebd;
+        }
+    }
+}
