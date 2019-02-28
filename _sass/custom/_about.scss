@@ -1,21 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400');
+@import url('https://fonts.googleapis.com/css?family=Laila:400');
+
 .about-content {
     .title {
-        height: 250px;
+        height: 280px;
         %pane {
             float: left;
-            height: 250px;
-            text-align: center;
+            height: 280px;
+            box-sizing: border-box;
+            padding: $spacing-unit / 2;
         }
-        $photo-pane-size: 250px !default;
+        $photo-pane-size: 280px !default;
         .photo-pane {
             @extend %pane;
             width: $photo-pane-size;
-            background-color:#c5e290;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: 0% 0%;
+                border-radius: 50%;
+                border: 2px #98b6ec solid;
+                box-shadow: 2px 2px 5px 0px rgba(20, 20, 20, 1.0);
+            }
         }
         .intro-pane {
             @extend %pane;
             width: $content-width - $photo-pane-size - 2 * $spacing-unit; 
-            background-color:#ffe2adbd;
+            text-align: justify;
+        }
+        .intro-pane p {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .intro-pane h2 {
+            font-family: 'Laila', serif;
+            margin-bottom: 10px;
         }
     }
     .project-list {
@@ -23,7 +42,6 @@
         .project {
             height: $project-size;
             width: $content-width - 2 * $spacing-unit;
-            background-color:#91ffdebd;
         }
     }
 }
