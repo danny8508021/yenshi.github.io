@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /about/
-id-img: /assets/id-small.jpg
+id-img: /assets/img/id-small.jpg
 ---
 <div class="about-content">
     <div class="title">
@@ -11,8 +11,10 @@ id-img: /assets/id-small.jpg
             <h2> About </h2>
             <p> I am Yen-Shi Wang, an undergraduate student from National Taiwan University. I found my interest in developing software programs during the second year of studying, so I got double Bachelor's degree in CS and EE.</p>
             <p> Now, I am looking for a software engineer job. </p>
+            <p> This is my <a class="cv" href="/assets/pdf/Yen-Shi-CV.pdf">Curriculum Vitae</a> .</p>
         </div>
     </div>
+    <hr class="horizontal-line">
     <div class="project-list">
         <div class="project"></div>
         <div class="project"></div>

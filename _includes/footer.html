@@ -7,12 +7,12 @@
       <div class="footer-col">
         {%- if site.github_username -%}
           <a class="footer-icon" href="https://github.com/{{ site.github_username | cgi_escape | escape }}">
-            <img src="/assets/github-icon.png"/>
+            <img src="{{ include.github-icon }}"/>
           </a>
         {%- endif -%}
         {%- if site.linkedin_username -%}
           <a class="footer-icon" href="https://www.linkedin.com/in/{{ site.linkedin_username| cgi_escape | escape }}">
-            <img src="/assets/linkedin-icon.png"/>
+            <img src="{{ include.linkedin-icon }}"/>
           </a>
         {%- endif -%}
       </div>

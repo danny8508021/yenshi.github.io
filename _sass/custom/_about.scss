@@ -33,9 +33,15 @@
             font-family: 'Montserrat', sans-serif;
         }
         .intro-pane h2 {
+            padding-top: 15px;
             font-family: 'Laila', serif;
             margin-bottom: 10px;
         }
+    }
+    .horizontal-line {
+        margin: 10px;
+        border: 1px solid #345678;
+        border-radius: 50%;
     }
     .project-list {
         $project-size: 400px !default;

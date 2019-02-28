@@ -13,7 +13,9 @@
       </div>
     </main>
 
-    {%- include footer.html -%}
+    {%- include footer.html
+        github-icon="/assets/img/github-icon.png"
+        linkedin-icon="/assets/img/linkedin-icon.png" -%}
 
     {% if jekyll.environment == 'production' %}
       {%- include google-analytics.html -%}
