@@ -1,0 +1,95 @@
+// reference: https://blog.hellosanta.com.tw/%E7%B6%B2%E7%AB%99%E8%A8%AD%E8%A8%88/%E5%89%8D%E7%AB%AF/%E4%BD%BF%E7%94%A8sass-mixin%E4%BE%86%E9%96%8B%E7%99%BCresponsive%E7%B6%B2%E7%AB%99
+
+$pc-media:      960px;
+$pcs-media:     959px;
+$pad-media:     760px;
+$pads-media:    759px;
+$phone-media:   480px;
+$phones-media:  479px;
+
+//電腦
+@mixin pc-width() {
+    @media all and (min-width: $pc-media) {
+        @content;
+    }
+}
+
+//平板
+@mixin pad-width() {
+    @media all and (min-width:$pad-media) and (max-width: $pcs-media) {
+        @content;
+    }
+}
+
+//小平板
+@mixin small-pad-width() {
+    @media all and (min-width: $phone-media) and (max-width:$pads-media) {
+        @content;
+    }
+}
+
+//手機
+@mixin phone-width() {
+    @media all and (max-width: $phones-media) {
+        @content;
+    }
+}
+
+@mixin responsive-padding($pc,$pad,$small-pad,$phone) {
+    //電腦版
+    @include pc-width {
+        padding: $pc;
+    }
+    //平板
+    @include pad-width {
+        padding: $pad;
+    }
+    //小平板
+    @include small-pad-width {
+        padding: $small-pad;
+    }
+    //手機
+    @include small-pad-width {
+        padding: $phone;
+    }
+}
+
+//margin responsive的mixin
+@mixin responsive-margin($pc,$pad,$small-pad,$phone) {
+    //電腦版
+    @include pc-width {
+        margin: $pc;
+    }
+    //平板
+    @include pad-width {
+        margin: $pad;
+    }
+    //小平板
+    @include small-pad-width {
+        margin: $small-pad;
+    }
+    //手機
+    @include small-pad-width {
+        margin: $phone;
+    }
+}
+
+//width responsive的mixin
+@mixin responsive-width($pc,$pad,$small-pad,$phone) {
+    //電腦版
+    @include pc-width {
+        width: $pc;
+    }
+    //平板
+    @include pad-width {
+        width: $pad;
+    }
+    //小平板
+    @include small-pad-width {
+        width: $small-pad;
+    }
+    //手機
+    @include small-pad-width {
+        width: $phone;
+    }
+}
