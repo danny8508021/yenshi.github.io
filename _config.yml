@@ -17,7 +17,8 @@ author: Yen-Shi Wang
 title: Home
 email: yenshiw@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Record my life.  
+  Yen-Shi Wang
+
   
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://yen-shi.github.io" # the base hostname & protocol for your site, e.g. http://example.com
