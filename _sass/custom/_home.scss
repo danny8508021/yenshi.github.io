@@ -53,12 +53,49 @@
         border: 1px solid #345678;
         border-radius: 50%;
     }
+    .section-title {
+        padding-top: 10px;
+        padding-left: $spacing-unit;
+        margin-bottom: 0px;
+        font-family: 'Laila', serif;
+    }
+
     .project-list {
-        @extend %responsive-flex;
-        $project-size: 400px !default;
         .project {
-            height: $project-size;
-            width: $content-width - 2 * $spacing-unit;
+            @extend %responsive-flex;
+            $project-size: 200px !default;
+            $border-width: 0px !default;
+
+            margin: 0;
+            border-style: solid;
+            border-color: #cde3f181;
+            border-radius: $spacing-unit;
+            border-width: $border-width;
+            box-sizing: border-box;
+
+            %pane {
+                height: $project-size;
+                box-sizing: border-box;
+                padding: $spacing-unit / 2;
+            }
+            .project-photo {
+                @extend %pane;
+                width: $project-size;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: 0% 0%;
+                    border-radius: 50%;
+                    border: 2px #f1e6cd77 solid;
+                    box-shadow: 2px 2px 5px 0px rgba(20, 20, 20, 1.0);
+                }
+            }
+            .project-intro {
+                @extend %pane;
+                width: $content-width - $project-size - 2 * $spacing-unit - 2 * $border-width;
+                text-align: justify;
+            }
         }
     }
 }
