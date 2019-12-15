@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600');
 @import url('https://fonts.googleapis.com/css?family=Laila:400');
 
 .home-content {
@@ -87,15 +88,36 @@
                     object-fit: contain;
                     object-position: 50% 50%;
                     border-radius: 5%;
-                    // border: 2px #f1e6cd77 solid;
-                    // box-shadow: 2px 2px 5px 0px rgba(20, 20, 20, 1.0);
                 }
             }
             .project-intro {
                 @extend %pane;
                 width: $content-width - $project-size - 2 * $spacing-unit - 2 * $border-width;
                 text-align: justify;
+                .project-title {
+                    padding-left: $spacing-unit / 2;
+                    font-family: 'Laila', serif;
+                    float: left;
+                }
+                .project-time {
+                    color: #575454;
+                    font-family: 'Laila', serif;
+                    float: right;
+                }
+                p {
+                    clear: both;
+                    padding-left: $spacing-unit / 2;
+                    font-family: 'Montserrat', sans-serif;
+                }
             }
         }
     }
+}
+
+.span-bold {
+    font-weight: 600;
+}
+
+.span-small{
+    font-size: 12px;
 }
