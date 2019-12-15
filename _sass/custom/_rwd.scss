@@ -7,88 +7,77 @@ $pads-media:    759px;
 $phone-media:   480px;
 $phones-media:  479px;
 
-//電腦
+// computer
 @mixin pc-width() {
     @media all and (min-width: $pc-media) {
         @content;
     }
 }
 
-//平板
+// pad
 @mixin pad-width() {
     @media all and (min-width:$pad-media) and (max-width: $pcs-media) {
         @content;
     }
 }
 
-//小平板
+// small pad
 @mixin small-pad-width() {
     @media all and (min-width: $phone-media) and (max-width:$pads-media) {
         @content;
     }
 }
 
-//手機
+// phone
 @mixin phone-width() {
     @media all and (max-width: $phones-media) {
         @content;
     }
 }
 
+// responsive padding
 @mixin responsive-padding($pc,$pad,$small-pad,$phone) {
-    //電腦版
     @include pc-width {
         padding: $pc;
     }
-    //平板
     @include pad-width {
         padding: $pad;
     }
-    //小平板
     @include small-pad-width {
         padding: $small-pad;
     }
-    //手機
     @include small-pad-width {
         padding: $phone;
     }
 }
 
-//margin responsive的mixin
+// responsive margin
 @mixin responsive-margin($pc,$pad,$small-pad,$phone) {
-    //電腦版
     @include pc-width {
         margin: $pc;
     }
-    //平板
     @include pad-width {
         margin: $pad;
     }
-    //小平板
     @include small-pad-width {
         margin: $small-pad;
     }
-    //手機
     @include small-pad-width {
         margin: $phone;
     }
 }
 
-//width responsive的mixin
+// responsive width
 @mixin responsive-width($pc,$pad,$small-pad,$phone) {
-    //電腦版
     @include pc-width {
         width: $pc;
     }
-    //平板
     @include pad-width {
         width: $pad;
     }
-    //小平板
     @include small-pad-width {
         width: $small-pad;
     }
-    //手機
     @include small-pad-width {
         width: $phone;
     }
