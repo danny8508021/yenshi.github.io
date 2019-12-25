@@ -87,6 +87,18 @@ id-img: ../assets/img/id-small.jpg
             <div class="project-intro">
                 <h3 class="project-title">Twitter Data Analysis, CMU Cloud Computing</h3>
                 <h3 class="project-time">Fall 2019</h3>
+                <p>
+                    We need to apply
+                    <a href="https://en.wikipedia.org/wiki/Extract,_transform,_load">ETL</a>
+                    process on 1TB raw data, store the results in database, and deploy
+                    a service which responds to specific query.
+                    It's a team of 3. I configured both MySQL and
+                    <a href="https://hbase.apache.org/">HBase</a>
+                    according to different tasks and deployed
+                    8 web instances and 1 load balancer on AWS EC2.
+                    We then further migrated previous service
+                    to AWS ECS/RDS/Lightsail.
+                </p>
             </div>
             <div class="project-photo">
                 <img src="/images/ccproject.png"/>
@@ -94,8 +106,21 @@ id-img: ../assets/img/id-small.jpg
         </div>
         <div class="project">
             <div class="project-intro">
-                <h3 class="project-title">Mail Server, NTU Network Administration</h3>
+                <h3 class="project-title">Mail Service, NTU Network Administration</h3>
                 <h3 class="project-time">Spring 2017</h3>
+                <p>
+                    It's a simple and complete web service, from frontend, storage, to user account management.
+                    I setup an
+                    <a href="https://en.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol">LDAP</a>
+                    database on both
+                    <a href="http://www.postfix.org/">Postfix</a> (SMTP)
+                    and
+                    <a href="https://www.dovecot.org/">Dovecot</a> (IMAP)
+                    servers to provide user authentication information.
+                    We also utilized
+                    <a href="https://www.ansible.com/">Ansible</a>
+                    to deploy entire service to remote instances.
+                </p>
             </div>
             <div class="project-photo">
                 <img src="/images/nasa.png"/>
