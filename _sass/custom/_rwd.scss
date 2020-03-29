@@ -46,7 +46,7 @@ $phones-media:  479px;
     @include small-pad-width {
         padding: $small-pad;
     }
-    @include small-pad-width {
+    @include phone-width {
         padding: $phone;
     }
 }
@@ -62,7 +62,7 @@ $phones-media:  479px;
     @include small-pad-width {
         margin: $small-pad;
     }
-    @include small-pad-width {
+    @include phone-width {
         margin: $phone;
     }
 }
@@ -78,7 +78,23 @@ $phones-media:  479px;
     @include small-pad-width {
         width: $small-pad;
     }
-    @include small-pad-width {
+    @include phone-width {
         width: $phone;
+    }
+}
+
+// responsive height
+@mixin responsive-height($pc,$pad,$small-pad,$phone) {
+    @include pc-width {
+        height: $pc;
+    }
+    @include pad-width {
+        height: $pad;
+    }
+    @include small-pad-width {
+        height: $small-pad;
+    }
+    @include phone-width {
+        height: $phone;
     }
 }
