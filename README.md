@@ -1,4 +1,6 @@
-# Yen-Shi
-My personal website
+# My personal website
 
-https://yen-shi.github.io
+## How to test locally
+```
+bundle exec jekyll serve --watch --livereload --incremental
+```
