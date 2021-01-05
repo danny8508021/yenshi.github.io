@@ -1,7 +1,9 @@
 <header class="site-header" role="banner">
 
   <div class="wrapper">
-    <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+    {%- assign fields = page.permalink | split: "/" -%}
+    {%- assign used_lang = fields[1] | default: "en" -%}
+    <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.data.languages[used_lang].title | escape }}</a>
     <nav class="site-nav">
       <input type="checkbox" id="nav-trigger" class="nav-trigger" />
       <label for="nav-trigger">
@@ -20,13 +22,13 @@
       {%- assign default_paths = site.pages | map: "path" -%}
       {%- assign page_paths = site.header_pages | default: default_paths -%}
       <div class="trigger">
-        <div style="display: inline-block; padding-right: 15px; color: lightslategray;"> Posts: </div>
+        <div style="display: inline-block; padding-right: 15px; color: lightslategray;"> {{ site.data.languages[used_lang].posts }}: </div>
         {%- for path in page_paths reversed -%}
         {%- assign posts = site.pages | where: "path", path | first -%}
         {%- if posts.lang -%}
         <a class="page-link" href="{{ posts.url | relative_url }}">
           {{ site.data.languages[posts.lang].icon }}
-          {{ posts.title | escape }}
+          {{ posts.posts_name[used_lang] | escape }}
         </a>
         {%- endif -%}
         {% endfor -%}

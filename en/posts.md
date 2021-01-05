@@ -1,6 +1,9 @@
 ---
 layout: default
-title: English
+title: All Posts
+posts_name:
+  en: English
+  tw: 英文
 lang: en
 permalink: /en/posts/
 ---
@@ -8,7 +11,7 @@ permalink: /en/posts/
 <div class="home">
 
   {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading">All Posts</h2>
+    <h2 class="post-list-heading">{{ page.title }}</h2>
     <ul class="post-list">
       {%- for post in site.posts -%}
       {%- if post.lang == page.lang -%}
