@@ -8,9 +8,10 @@ permalink: /tw/posts/
 <div class="home">
 
   {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading">{{ layout.list_title | default: "Posts" }}</h2>
+    <h2 class="post-list-heading">全部文章</h2>
     <ul class="post-list">
       {%- for post in site.posts -%}
+      {%- if post.lang == page.lang -%}
       <li>
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         <span class="post-meta">{{ post.date | date: date_format }}</span>
@@ -23,6 +24,7 @@ permalink: /tw/posts/
           {{ post.excerpt }}
         {%- endif -%}
       </li>
+      {%- endif -%}
       {%- endfor -%}
     </ul>
 
