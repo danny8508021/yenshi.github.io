@@ -1,6 +1,8 @@
 ---
 layout: page
 title: 使用 Jekyll 製作 Github Pages
+lang: tw
+lang-ref: jekyll-github-pages
 ---
 > 紀錄最近使用 Jekyll 來製作個人網頁的心得。
 

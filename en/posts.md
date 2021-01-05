@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Posts
-permalink: /posts/
+title: English
+permalink: /en/posts/
 ---
 
 <div class="home">
