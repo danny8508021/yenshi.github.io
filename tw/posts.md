@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Traditional Chinese
+lang: tw
 permalink: /tw/posts/
 ---
 

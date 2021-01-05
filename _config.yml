@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 author: Yen-Shi Wang
-title: Home
+title: About
 email: yenshiw@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Yen-Shi Wang
