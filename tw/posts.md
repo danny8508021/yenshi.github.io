@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 全部文章
+title: 中文文章
 posts_name:
   en: Taiwanese
   tw: 中文

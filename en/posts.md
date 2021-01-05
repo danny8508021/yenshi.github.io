@@ -1,6 +1,6 @@
 ---
 layout: default
-title: All Posts
+title: English Posts
 posts_name:
   en: English
   tw: 英文
