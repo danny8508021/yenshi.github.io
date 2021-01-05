@@ -1,6 +1,10 @@
 en:
   label: English
   icon: 🇺🇸
+  title: About
+  posts: Posts
 tw:
-  label: Traditional Chinese
+  label: Taiwanese
   icon: 🇹🇼
+  title: 關於
+  posts: 文章列表

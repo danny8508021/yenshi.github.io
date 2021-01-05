@@ -18,8 +18,10 @@
       </div>
       <div class="footer-col">
         <div>
+          {%- assign fields = page.permalink | split: "/" -%}
+          {%- assign used_lang = fields[1] | default: "en" -%}
           {%- if site.author -%}
-            {{ site.author | escape }}
+            {{ site.author[used_lang] | escape }}
           {%- else -%}
             {{ site.title | escape }}
           {%- endif -%}

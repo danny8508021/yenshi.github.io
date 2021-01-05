@@ -13,11 +13,13 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-author: Yen-Shi Wang
-title: About
+author:
+  en: Yen-Shi Wang
+  tw: 王彥稀
+title: Y. Wang's Blog
 email: yenshiw@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Yen-Shi Wang
+  About
 
   
 baseurl: "" # the subpath of your site, e.g. /blog

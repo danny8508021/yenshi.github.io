@@ -8,7 +8,7 @@
         flex-flow: wrap;
         justify-content: center;
     }
-    .title {
+    .intro {
         @extend %responsive-flex;
         $pane-size: 280px !default;
         %pane {
