@@ -1,4 +1,7 @@
 <header class="site-header" role="banner">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
 
   <div class="wrapper">
     {%- assign fields = page.permalink | split: "/" -%}
@@ -22,12 +25,12 @@
       {%- assign default_paths = site.pages | map: "path" -%}
       {%- assign page_paths = site.header_pages | default: default_paths -%}
       <div class="trigger">
-        <div style="display: inline-block; padding-right: 15px; color: lightslategray;"> {{ site.data.languages[used_lang].posts }}: </div>
+        <div id="header-links-name"> {{ site.data.languages[used_lang].posts }}: </div>
         {%- for path in page_paths reversed -%}
         {%- assign posts = site.pages | where: "path", path | first -%}
         {%- if posts.lang -%}
-        <a class="page-link" href="{{ posts.url | relative_url }}">
-          {{ site.data.languages[posts.lang].icon }}
+        <img class="header-flag" src="{{ site.data.languages[posts.lang].icon }}"/>
+        <a id="header-lang-link" href="{{ posts.url | relative_url }}">
           {{ posts.posts_name[used_lang] | escape }}
         </a>
         {%- endif -%}

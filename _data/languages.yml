@@ -1,10 +1,10 @@
 en:
   label: English
-  icon: 🇺🇸
+  icon: /assets/img/us-flag.png
   title: About
   posts: Posts
 tw:
   label: Taiwanese
-  icon: 🇹🇼
+  icon: /assets/img/tw-flag.png
   title: 關於
   posts: 文章列表
